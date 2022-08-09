@@ -33,7 +33,7 @@ public class Job4jHibernateRun {
 
 			Query query2 = session.createQuery(
 					"from Candidate c where c.name like 'Tony'");
-			System.out.println(query2.uniqueResult());
+			System.out.println(query2.list());
 
 			session.createQuery(
 					"update Candidate c "
